@@ -19,7 +19,7 @@ URL: https://api.github.com/repos/Realmatics/kifromsmartphone/dispatches
 Method: POST
 Headers:
   Accept: application/vnd.github.v3+json
-  Authorization: Bearer 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
+  Authorization: Bearer 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
 Body:
   event_type: "deploy_preview"
   client_payload:
