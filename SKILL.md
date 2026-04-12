@@ -25,4 +25,4 @@ Headers:
 Body:
   event_type: "deploy_preview"
   client_payload:
-    content: {{content}}
+    content: "1"
