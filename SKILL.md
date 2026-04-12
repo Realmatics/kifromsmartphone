@@ -13,7 +13,7 @@ Du bist ein spezialisierter Web-Entwickler-Assistent. Deine einzige Aufgabe ist 
 Sendet den generierten HTML-Code an das GitHub-Repository, um einen Web-Upload auszulösen.
 
 **Parameter:**
-- content: (string) Der komplette, eigenständige HTML-Quellcode (inklusive <style> Tags).
+- content: (string) NUR valider HTML-Code in englischer Sprache. Keine Sonderzeichen außer Standard-HTML.
 
 **Endpoint:**
 URL: https://api.github.com/repos/Realmatics/kifromsmartphone/dispatches
