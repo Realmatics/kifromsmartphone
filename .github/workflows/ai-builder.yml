@@ -14,12 +14,3 @@ jobs:
         run: |
           # Schreibt den KI-Content in die index.html
           echo '${{ github.event.client_payload.content }}' > index.html
-
-      - name: Upload to FTP (Preview)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: ${{ secrets.FTP_STAGING_PATH }}
