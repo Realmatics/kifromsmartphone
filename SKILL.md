@@ -1,4 +1,4 @@
----
+wo---
 name: Web-Designer Pro
 description: Erstellt Webseiten direkt auf deinem FTP-Server.
 ---
@@ -19,7 +19,7 @@ URL: https://api.github.com/repos/Realmatics/kifromsmartphone/dispatches
 Method: POST
 Headers:
   Accept: application/vnd.github.v3+json
-  Authorization: Bearer {{GITHUB_TOKEN}}
+  Authorization: Bearer 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
 Body:
   event_type: "deploy_preview"
   client_payload:
