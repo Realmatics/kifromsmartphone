@@ -25,7 +25,7 @@ Headers:
 Body:
   event_type: "deploy_preview"
   client_payload:
-    content: "{{content}}"
+    content: {{content}}
     
 **Response:**
 204: "Erfolgreich an GitHub gesendet! Die Action wurde gestartet."
