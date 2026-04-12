@@ -1,4 +1,4 @@
-wo---
+---
 name: Web-Designer Pro
 description: Erstellt Webseiten direkt auf deinem FTP-Server.
 ---
