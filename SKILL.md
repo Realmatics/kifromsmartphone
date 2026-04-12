@@ -25,4 +25,9 @@ Headers:
 Body:
   event_type: "deploy_preview"
   client_payload:
-    content: "1"
+    content: "{{content}}"
+    
+**Response:**
+204: "Erfolgreich an GitHub gesendet! Die Action wurde gestartet."
+401: "Fehler: Ungültiger Token."
+404: "Fehler: Repository nicht gefunden."
