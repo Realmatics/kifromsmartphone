@@ -15,7 +15,7 @@ Erstellt eine Vorschau der Webseite auf dem Server.
 - content: (string) Der komplette HTML-Code inklusive CSS in <style> Tags.
 
 **Endpoint:**
-URL: https://api.github.com/repos/DEIN_GITHUB_NAME/DEIN_REPO_NAME/dispatches
+URL: https://api.github.com/repos/Realmatics/kifromsmartphone/dispatches
 Method: POST
 Headers:
   Accept: application/vnd.github.v3+json
