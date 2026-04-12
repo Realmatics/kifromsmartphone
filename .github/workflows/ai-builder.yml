@@ -4,13 +4,23 @@ on:
     types: [deploy_preview]
 
 jobs:
-  deploy:
+  create_file:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Create Webpage File
+      - name: Create index.html
         run: |
-          # Schreibt den KI-Content in die index.html
-          echo '${{ github.event.client_payload.content }}' > index.html
+          echo "${{ github.event.client_payload.content }}" > index.html
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "AI Builder"
+          git config --global user.email "actions@github.com"
+          git add index.html
+          git commit -m "Webseite von KI aktualisiert"
+          git push
+          
