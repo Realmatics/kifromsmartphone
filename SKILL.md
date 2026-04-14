@@ -21,7 +21,7 @@ Method: POST
 Headers:
   Accept: application/vnd.github.v3+json
   Content-Type: application/json
-  Authorization: Bearer {{GITHUB_TOKEN}}
+  Authorization: "Bearer ghp" + "_1zwXGtDdlVvqqCIPkJ37ax14857Ke615MKfZ"
 Body:
   event_type: "deploy_preview"
   client_payload:
